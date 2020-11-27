@@ -7,7 +7,7 @@
     <title>Đăng nhập</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="./js/jquery-3.5.1.min.js">
 
     <!--core js-->
