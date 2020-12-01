@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-2 header-login-signup">
-                <button type="button" class="btn btn-primary btn-login" id="btn-login">Đăng nhập<a href="login"></a></button>
+                <a href="/login" class="btn btn-secondary" role="button">Đăng Nhập</a>
             </div>
         </div>
     </div>
