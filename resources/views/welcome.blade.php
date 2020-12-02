@@ -44,7 +44,7 @@
                               </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Kiểm định các cấp</a>
-                                        <a class="dropdown-item" href="#">Kiểm định chương trình đào tạo</a>
+                                        <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="page_quaility">Kiểm định chứng chỉ</a>
                                     </div>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-2 header-login-signup">
-                <a href="/login" class="btn btn-secondary" role="button">Đăng Nhập</a>
+                <a href="/view_login" class="btn btn-secondary" role="button">Đăng Nhập</a>
             </div>
         </div>
     </div>

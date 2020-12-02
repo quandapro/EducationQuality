@@ -26,4 +26,11 @@ Route::get('/page_intro', 'page_introController@index');
 Route::get('/page_quality', 'page_qualityController@index');
 Route::get('/page_quality_item', 'page_quality_itemController@index');
 Route::get('/login', 'loginController@index');
+Route::get('/view_login', 'LoginController@index');
 
+Route::get('/view_CTDT_programs', 'CTDTController@index');
+Route::get('/view_CTDT_create_programs', 'CTDTController@create');
+Route::get('/view_CTDT_show_programs/{id}', 'CTDTController@show');
+Route::post('/view_CTDT_store_programs', 'CTDTController@store');
+Route::post('/view_CTDT_update_programs/{id}', 'CTDTController@update');
+Route::get('/view_CTDT_delete_programs/{id}', 'CTDTController@destroy');

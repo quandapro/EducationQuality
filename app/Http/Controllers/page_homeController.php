@@ -17,7 +17,7 @@ class page_homeController extends Controller
         return view('welcome');
     }
 
-    /**
+        /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

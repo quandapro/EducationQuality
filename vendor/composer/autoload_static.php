@@ -533,8 +533,10 @@ class ComposerStaticInit1a6391285e20c899a39435a6beeef093
     );
 
     public static $classMap = array (
+        'App\\ChuongTrinhDaoTao' => __DIR__ . '/../..' . '/app/ChuongTrinhDaoTao.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -543,7 +545,6 @@ class ComposerStaticInit1a6391285e20c899a39435a6beeef093
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\admin_homeController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin_homeController.php',
-        'App\\Http\\Controllers\\loginController' => __DIR__ . '/../..' . '/app/Http/Controllers/loginController.php',
         'App\\Http\\Controllers\\page_eventController' => __DIR__ . '/../..' . '/app/Http/Controllers/page_eventController.php',
         'App\\Http\\Controllers\\page_homeController' => __DIR__ . '/../..' . '/app/Http/Controllers/page_homeController.php',
         'App\\Http\\Controllers\\page_introController' => __DIR__ . '/../..' . '/app/Http/Controllers/page_introController.php',
