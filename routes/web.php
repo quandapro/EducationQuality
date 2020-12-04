@@ -34,3 +34,10 @@ Route::get('/view_CTDT_show_programs/{id}', 'CTDTController@show');
 Route::post('/view_CTDT_store_programs', 'CTDTController@store');
 Route::post('/view_CTDT_update_programs/{id}', 'CTDTController@update');
 Route::get('/view_CTDT_delete_programs/{id}', 'CTDTController@destroy');
+
+Route::get('/view_CSGD_programs', 'CSGDController@index');
+Route::get('/view_CSGD_create_programs', 'CSGDController@create');
+Route::get('/view_CSGD_show_programs/{id}', 'CSGDController@show');
+Route::post('/view_CSGD_store_programs', 'CSGDController@store');
+Route::post('/view_CSGD_update_programs/{id}', 'CSGDController@update');
+Route::get('/view_CSGD_delete_programs/{id}', 'CSGDController@destroy');
