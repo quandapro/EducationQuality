@@ -41,3 +41,10 @@ Route::get('/view_CSGD_show_programs/{id}', 'CSGDController@show');
 Route::post('/view_CSGD_store_programs', 'CSGDController@store');
 Route::post('/view_CSGD_update_programs/{id}', 'CSGDController@update');
 Route::get('/view_CSGD_delete_programs/{id}', 'CSGDController@destroy');
+
+Route::get('/view_TC_CTDT_programs', 'TieuChiCTDTController@index');
+Route::get('/view_TC_CTDT_create_programs', 'TieuChiCTDTController@create');
+Route::get('/view_TC_CTDT_show_programs/{id}', 'TieuChiCTDTController@show');
+Route::post('/view_TC_CTDT_store_programs', 'TieuChiCTDTController@store');
+Route::post('/view_TC_CTDT_update_programs/{id}', 'TieuChiCTDTController@update');
+Route::get('/view_TC_CTDT_delete_programs/{id}', 'TieuChiCTDTController@destroy');
