@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class CoSoGiaoDuc extends Model
 {
     protected $table = 'cosogiaoduc';
-    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *

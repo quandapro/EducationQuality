@@ -45,8 +45,6 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a href="/view_CSGD_programs" class="dropdown-item" href="#">Kiểm định cơ sở giáo dục</a>
                                         <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="page_quaility">Kiểm định chứng chỉ</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
