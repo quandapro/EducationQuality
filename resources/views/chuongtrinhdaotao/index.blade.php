@@ -155,7 +155,7 @@
                             <th scope="col">Ngày hết hạn kiểm định</th>
                             <th scope="col">Thời hạn</th>
                             <th scope="col">Văn bản kiểm định</th>
-							<th scope="col" colspan=2>Tùy chọn</th>
+							<th scope="col" colspan=3>Tùy chọn</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -164,10 +164,11 @@
 							<td>{{ $program->ten_CTDT }}</td>
 							<td>{{ $program->ngay_kd }}</td>
 							<td>{{ $program->ngayHetHan_kd }}</td>
-							<td>{{ $program->thoiHan }}</td>
+							<td>{{ $program->thoiHan }} năm</td>
                             <td>{{ $program->vanBan_kd }}</td>
 							<td><a href="/view_CTDT_show_programs/{{$program -> id_CTDT}}" id="create_course">sửa</a></td>
 							<td><a href="/view_CTDT_delete_programs/{{$program -> id_CTDT}}" id="create_course">xóa</a></td>
+                            <td><a href="/view_TC_CTDT_programs" id="create_course">xem</a></td>
 						</tr>
 						@endforeach
 
