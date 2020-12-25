@@ -105,11 +105,11 @@
         <div class="row infomation-body-title">
             <h3>Thêm cơ sở giáo dục</h3>
         </div>
-        <form action = "/view_CTDT_store_programs" method = "post">
+        <form action = "/view_CSGD_store_programs" method = "post">
             @csrf
             <div class="form-group">
                 <label for="nameProgram">Tên cơ sở giáo dục:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter the name" name="ten_CTDT">
+                <input type="text" class="form-control" id="name" placeholder="Enter the name" name="ten_CSGD">
             </div>
 
             <div class="form-group">
@@ -127,10 +127,6 @@
                 <input type="text" class="form-control" id="date" placeholder="Enter the number of years" name="thoiHan">
             </div>
 
-            <div class="form-group">
-                <label for="Program">Văn bản kiểm định:</label>
-                <input type="text" class="form-control" id="date" placeholder="Enter the name" name="vanBan_kd">
-            </div>
 
             <button type="submit" class="btn btn-primary">Thêm</button>
         </form>

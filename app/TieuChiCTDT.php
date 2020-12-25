@@ -8,6 +8,7 @@ class TieuChiCTDT extends Model
 {
     //
     protected $table = 'tieuchi_ctdt';
+    public $timestamps = false;
     /**
      * The attributes that are mass assignable.
      *

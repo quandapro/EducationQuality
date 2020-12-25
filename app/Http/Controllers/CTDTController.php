@@ -45,7 +45,6 @@ class CTDTController extends Controller
             $program->ngay_kd = $data['ngay_kd'];
             $program->ngayHetHan_kd = $data['ngayHetHan_kd'];
             $program->thoiHan = $data['thoiHan'];
-            $program->vanBan_kd = $data['vanBan_kd'];
             $program->save();
             return redirect('/view_CTDT_programs')->with('status', "Insert successfully");
         }
@@ -91,8 +90,7 @@ class CTDTController extends Controller
         $ngay_kd = $request -> input('ngay_kd');
         $ngayHetHan_kd = $request -> input('ngayHetHan_kd');
         $thoiHan = $request -> input('thoiHan');
-        $vanBan_kd = $request -> input('vanBan_kd');
-        DB::update('update chuongtrinhdaotao set ten_CTDT = ?, ngay_kd=?, ngayHetHan_kd=?,thoiHan=?, vanBan_kd = ? where id_CTDT = ?', [$ten_CTDT,$ngay_kd,$ngayHetHan_kd,$thoiHan,$vanBan_kd, $id]);
+        DB::update('update chuongtrinhdaotao set ten_CTDT = ?, ngay_kd=?, ngayHetHan_kd=?,thoiHan=? where id_CTDT = ?', [$ten_CTDT,$ngay_kd,$ngayHetHan_kd,$thoiHan, $id]);
         return redirect('/view_CTDT_programs')->with('status', "Insert successfully");
     }
 

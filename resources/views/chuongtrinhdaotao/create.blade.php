@@ -126,11 +126,6 @@
                 <input type="text" class="form-control" id="date" placeholder="Enter the number of years" name="thoiHan">
             </div>
 
-            <div class="form-group">
-                <label for="Program">Văn bản kiểm định:</label>
-                <input type="text" class="form-control" id="date" placeholder="Enter the name" name="vanBan_kd">
-            </div>
-
             <button type="submit" class="btn btn-primary">Thêm</button>
         </form>
     </div>

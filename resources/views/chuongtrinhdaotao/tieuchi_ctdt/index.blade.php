@@ -122,290 +122,288 @@
                 </tr>
                 </thead>
 
+
                 <tbody>
-                <tr>
-                    <td rowspan="4"><i>Tiêu chuẩn 1</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 1.1</td>
-                    <td></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
+                    @foreach ($programs as $program)
+                    <tr>
+                        <td rowspan="4"><i>Tiêu chuẩn 1</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 1.1</td>
+                        <td>{{ $program -> tieuChi1_1 }}</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
 
-                </tr>
-                <tr>
-                    <td>Tiêu chí 1.2</td>
-                    <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 1.2</td>
+                        <td>{{ $program -> tieuChi1_2 }}</td>
 
-                </tr>
-                <tr>
-                    <td>Tiêu chí 1.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="4"><i>Tiêu chuẩn 2</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 2.1</td>
-                    <td></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 2.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 2.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="4"><i>Tiêu chuẩn 3</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 1.3</td>
+                        <td>{{ $program -> tieuChi1_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4"><i>Tiêu chuẩn 2</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 2.1</td>
+                        <td>{{ $program -> tieuChi2_1 }}</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 2.2</td>
+                        <td>{{ $program -> tieuChi2_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 2.3</td>
+                        <td>{{ $program -> tieuChi2_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4"><i>Tiêu chuẩn 3</i></td>
 
-                </tr>
-                <tr>
-                    <td>Tiêu chí 3.1</td>
-                    <td></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 3.1</td>
+                        <td>{{ $program -> tieuChi3_1 }}</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
 
-                </tr>
-                <tr>
-                    <td>Tiêu chí 3.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 3.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="4"><i>Tiêu chuẩn 4</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 4.1</td>
-                    <td></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                    <td rowspan="3"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 4.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 4.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6"><i>Tiêu chuẩn 5</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 5.1</td>
-                    <td></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 5.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 5.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 5.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 5.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="8"><i>Tiêu chuẩn 6</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.1</td>
-                    <td></td>
-                    <td rowspan="7"></td>
-                    <td rowspan="7"></td>
-                    <td rowspan="7"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.6</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 6.7</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6"><i>Tiêu chuẩn 7</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 7.1</td>
-                    <td></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 7.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 7.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 7.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 7.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6"><i>Tiêu chuẩn 8</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 8.1</td>
-                    <td></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 8.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 8.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 8.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 8.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6"><i>Tiêu chuẩn 9</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 9.1</td>
-                    <td></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 9.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 9.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 9.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 9.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="7"><i>Tiêu chuẩn 10</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.1</td>
-                    <td></td>
-                    <td rowspan="6"></td>
-                    <td rowspan="6"></td>
-                    <td rowspan="6"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.5</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 10.6</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="6"><i>Tiêu chuẩn 11</i></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 11.1</td>
-                    <td></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                    <td rowspan="5"></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 11.2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 11.3</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 11.4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Tiêu chí 11.5</td>
-                    <td></td>
-                </tr>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 3.2</td>
+                        <td>{{ $program -> tieuChi3_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 3.3</td>
+                        <td>{{ $program -> tieuChi3_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4"><i>Tiêu chuẩn 4</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 4.1</td>
+                        <td>{{ $program -> tieuChi4_1 }}</td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                        <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 4.2</td>
+                        <td>{{ $program -> tieuChi4_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 4.3</td>
+                        <td>{{ $program -> tieuChi4_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><i>Tiêu chuẩn 5</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 5.1</td>
+                        <td>{{ $program -> tieuChi5_1 }}</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 5.2</td>
+                        <td>{{ $program -> tieuChi5_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 5.3</td>
+                        <td>{{ $program -> tieuChi5_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 5.4</td>
+                        <td>{{ $program -> tieuChi5_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 5.5</td>
+                        <td>{{ $program -> tieuChi5_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="8"><i>Tiêu chuẩn 6</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.1</td>
+                        <td>{{ $program -> tieuChi6_1 }}</td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                        <td rowspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.2</td>
+                        <td>{{ $program -> tieuChi6_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.3</td>
+                        <td>{{ $program -> tieuChi6_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.4</td>
+                        <td>{{ $program -> tieuChi6_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.5</td>
+                        <td>{{ $program -> tieuChi6_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.6</td>
+                        <td>{{ $program -> tieuChi6_6 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 6.7</td>
+                        <td>{{ $program -> tieuChi6_7 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><i>Tiêu chuẩn 7</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 7.1</td>
+                        <td>{{ $program -> tieuChi7_1 }}</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 7.2</td>
+                        <td>{{ $program -> tieuChi7_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 7.3</td>
+                        <td>{{ $program -> tieuChi7_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 7.4</td>
+                        <td>{{ $program -> tieuChi7_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 7.5</td>
+                        <td>{{ $program -> tieuChi7_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><i>Tiêu chuẩn 8</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 8.1</td>
+                        <td>{{ $program -> tieuChi8_1 }}</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 8.2</td>
+                        <td>{{ $program -> tieuChi8_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 8.3</td>
+                        <td>{{ $program -> tieuChi8_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 8.4</td>
+                        <td>{{ $program -> tieuChi8_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 8.5</td>
+                        <td>{{ $program -> tieuChi8_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><i>Tiêu chuẩn 9</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 9.1</td>
+                        <td>{{ $program -> tieuChi9_1 }}</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 9.2</td>
+                        <td>{{ $program -> tieuChi9_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 9.3</td>
+                        <td>{{ $program -> tieuChi9_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 9.4</td>
+                        <td>{{ $program -> tieuChi9_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 9.5</td>
+                        <td>{{ $program -> tieuChi9_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7"><i>Tiêu chuẩn 10</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.1</td>
+                        <td>{{ $program -> tieuChi10_1 }}</td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                        <td rowspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.2</td>
+                        <td>{{ $program -> tieuChi10_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.3</td>
+                        <td>{{ $program -> tieuChi10_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.4</td>
+                        <td>{{ $program -> tieuChi10_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.5</td>
+                        <td>{{ $program -> tieuChi10_5 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 10.6</td>
+                        <td>{{ $program -> tieuChi10_6 }}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6"><i>Tiêu chuẩn 11</i></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 11.1</td>
+                        <td>{{ $program -> tieuChi11_1 }}</td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                        <td rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 11.2</td>
+                        <td>{{ $program -> tieuChi11_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 11.3</td>
+                        <td>{{ $program -> tieuChi11_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 11.4</td>
+                        <td>{{ $program -> tieuChi11_4 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tiêu chí 11.5</td>
+                        <td>{{ $program -> tieuChi11_5 }}</td>
+                    </tr>
 
-                <tr>
-                    <td colspan="2"><b>Đánh giá chung CTĐT</b></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-
-
-
-
+                    <tr>
+                        <td colspan="2"><b>Đánh giá chung CTĐT</b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    @endforeach
                 </tbody>
 
             </table>

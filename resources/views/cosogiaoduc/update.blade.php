@@ -126,10 +126,6 @@
                 <input value="{{$programs[0] -> thoiHan}}" type="text" class="form-control" id="date"  name="thoiHan">
             </div>
 
-            <div class="form-group">
-                <label for="Program">Văn bản kiểm định:</label>
-                <input value="{{$programs[0] -> vanBan_kd}}" type="text" class="form-control" id="date"  name="vanBan_kd">
-            </div>
             <button type="submit" class="btn btn-primary">Sửa</button>
         </form>
 

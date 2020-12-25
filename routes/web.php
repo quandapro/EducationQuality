@@ -25,7 +25,6 @@ Route::get('/page_event', 'page_eventController@index');
 Route::get('/page_intro', 'page_introController@index');
 Route::get('/page_quality', 'page_qualityController@index');
 Route::get('/page_quality_item', 'page_quality_itemController@index');
-Route::get('/login', 'loginController@index');
 Route::get('/view_login', 'LoginController@index');
 
 Route::get('/view_CTDT_programs', 'CTDTController@index');

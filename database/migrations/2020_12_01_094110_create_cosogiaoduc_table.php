@@ -20,7 +20,6 @@ class CreateCosogiaoducTable extends Migration
             $table->date('ngay_kd')->nullable();
             $table->date('ngayHetHan_kd')->nullable();
             $table->integer('thoiHan')->nullable();
-            $table->text('vanBan_kd')->nullable();
         });
     }
 
