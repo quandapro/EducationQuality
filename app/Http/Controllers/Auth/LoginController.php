@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -40,6 +43,40 @@ class LoginController extends Controller
     public function index()
     {
         //
-        return view('view_login');
+        return view('auth.login');
+    }
+
+    public function login(Request $request){
+        //return view('admin_home');
+        $user = User::where('usename', $request->username)
+            ->where('password', $request->password)
+            ->first();
+
+        if(!isset($user)){
+            return false;
+        }
+
+        Auth::login($user);
+        return view('admin_home');
+    }
+
+    protected function attemptLogin(Request $request)
+    {
+        $user = User::where('usename', $request->username)
+            ->where('password', $request->password)
+            ->first();
+
+        if(!isset($user)){
+            return false;
+        }
+
+        Auth::login($user);
+        return true;
+    }
+
+    public function logout(Request $request)
+    {
+        //Auth::logout();
+        return redirect('/welcome');
     }
 }

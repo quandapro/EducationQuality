@@ -26,13 +26,22 @@
             <div class="col-md-4 col-sm-12 menu-home" style="float: right;">
                 <nav class="navbar navbar-expand-lg">
                     <a class="nav-link" href="welcome">Trang chủ <span class="sr-only">(current)</span></a>
-                    <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="#">Đăng xuất</a></button>
+                    <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="/logout">Đăng xuất</a></button>
                 </nav>
             </div>
         </div>
     </div>
     <div id="body" class="container">
         <div class="container partner-body">
+            <div class="card-body">
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
+                {{ __('You are logged in!') }}
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="list-partner">
@@ -113,6 +122,7 @@
             </div>
         </div>
     </div>
+
     <div id="footer" class="container-fluid footer">
         <div class="row">
             <div class="col-md-5 footer-left">

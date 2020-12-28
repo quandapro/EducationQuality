@@ -16,6 +16,11 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+{{--                <div class="card-body">--}}
+{{--                    @if ( $role == 0 )--}}
+{{--                        <a href="/admin_page">di den trang admin</a><br>--}}
+{{--                    @endif--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

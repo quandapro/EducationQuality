@@ -25,7 +25,7 @@ Route::get('/page_event', 'page_eventController@index');
 Route::get('/page_intro', 'page_introController@index');
 Route::get('/page_quality', 'page_qualityController@index');
 Route::get('/page_quality_item', 'page_quality_itemController@index');
-Route::get('/view_login', 'LoginController@index');
+Route::get('/view_login', 'Auth\LoginController@index');
 
 Route::get('/view_CTDT_programs', 'CTDTController@index');
 Route::get('/view_CTDT_create_programs', 'CTDTController@create');
@@ -47,3 +47,10 @@ Route::get('/view_TC_CTDT_show_programs/{id}', 'TieuChiCTDTController@show');
 Route::post('/view_TC_CTDT_store_programs', 'TieuChiCTDTController@store');
 Route::post('/view_TC_CTDT_update_programs/{id}', 'TieuChiCTDTController@update');
 Route::get('/view_TC_CTDT_delete_programs/{id}', 'TieuChiCTDTController@destroy');
+
+//Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout','Auth\LoginController@logout');
+Route::post('/login','Auth\LoginController@login');
+
+Route::get('/admin_page','HomeController@index');
+
