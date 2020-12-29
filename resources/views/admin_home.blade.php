@@ -26,7 +26,6 @@
             <div class="col-md-4 col-sm-12 menu-home" style="float: right;">
                 <nav class="navbar navbar-expand-lg">
                     <a class="nav-link" href="welcome">Trang chủ <span class="sr-only">(current)</span></a>
-                    <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="/logout">Đăng xuất</a></button>
                 </nav>
             </div>
         </div>
@@ -76,7 +75,7 @@
 
         <div class="container infomation-body">
             <div class="row admin_home_body">
-                <h3>Administrator page</h3>
+                <h3></h3>
             </div>
             <div class="row left-info admin_home-content">
                 <div class="col-md-5 col-sm-12">

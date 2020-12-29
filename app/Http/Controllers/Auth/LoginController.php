@@ -47,17 +47,16 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        //return view('admin_home');
         $user = User::where('usename', $request->username)
             ->where('password', $request->password)
             ->first();
 
         if(!isset($user)){
-            return false;
+            echo "Tai khoan khong ton tai";
+            return view('auth.login');
         }
-
         Auth::login($user);
-        return view('admin_home');
+        return view('welcome')->with('role', $user->role);
     }
 
     protected function attemptLogin(Request $request)
@@ -77,6 +76,6 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         //Auth::logout();
-        return redirect('/welcome');
+        return redirect('/login');
     }
 }

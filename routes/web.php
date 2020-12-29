@@ -52,5 +52,6 @@ Route::get('/view_TC_CTDT_delete_programs/{id}', 'TieuChiCTDTController@destroy'
 Route::get('/logout','Auth\LoginController@logout');
 Route::post('/login','Auth\LoginController@login');
 
-Route::get('/admin_page','HomeController@index');
-
+Route::get('/admin_home', function () {
+    return view('admin_home');
+});

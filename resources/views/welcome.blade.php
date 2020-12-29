@@ -29,7 +29,14 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        <div class="card-body">
+                            @isset($role)
+                                @if ( $role == 0 )
+                                    <a href="/admin_home">di den trang admin</a><br>
+                                @endif
+                            @endisset
+                            
+                        </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
@@ -60,7 +67,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-2 header-login-signup">
-                <a href="/view_login" class="btn btn-secondary" role="button">Đăng Nhập</a>
+                <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="/logout">Đăng xuất</a></button>
             </div>
         </div>
     </div>
