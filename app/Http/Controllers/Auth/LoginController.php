@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-use App\User;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
@@ -56,7 +56,7 @@ class LoginController extends Controller
             return view('auth.login');
         }
         Auth::login($user);
-        return view('welcome')->with('role', $user->role);
+        return view('home')->with('role', $user->role);
     }
 
     protected function attemptLogin(Request $request)
