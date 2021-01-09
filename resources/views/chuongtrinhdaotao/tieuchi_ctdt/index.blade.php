@@ -115,10 +115,12 @@
 
                 </tr>
                 <tr>
-                    <td scope="col">Điểm theo tiêu chí</td>
-                    <td scope="col">Mức trung bình</td>
-                    <td scope="col">Số tiêu chí đạt</td>
-                    <td scope="col">Tỉ lệ số tiêu chí đạt(%)</td>
+                    @foreach ($programs as $program)
+                        <td scope="col" ><a href="/view_TC_CTDT_programs/{{$program -> id_CTDT}}" id="create_course">Điểm theo tiêu chí</a></td>
+                    @endforeach
+                    <td scope="col" >Mức trung bình</td>
+                    <td scope="col" >Số tiêu chí đạt</td>
+                    <td scope="col" >Tỉ lệ số tiêu chí đạt(%)</td>
                 </tr>
                 </thead>
 
@@ -397,11 +399,11 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2"><b>Đánh giá chung CTĐT</b></td>
+                        <td colspan="3"><b>Đánh giá chung CTĐT</b></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
+
                     </tr>
                     @endforeach
                 </tbody>

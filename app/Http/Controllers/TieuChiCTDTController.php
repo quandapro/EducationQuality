@@ -15,10 +15,8 @@ class TieuChiCTDTController extends Controller
      */
     public function index()
     {
-        //dd($id);
-        //$programs = DB::select('select * from tieuchi_ctdt');
-        //dd($programs);
-        //return view('chuongtrinhdaotao.tieuchi_ctdt.index', compact('programs'));
+        $programs = DB::select('select * from tieuchi_CTDT');
+        return  view('chuongtrinhdaotao.tieuchi_ctdt.update', compact('programs'));
     }
 
     /**

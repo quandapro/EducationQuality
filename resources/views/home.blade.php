@@ -32,7 +32,7 @@
                     <div class="card-body">
                         @isset($role)
                             @if ( $role == 0 )
-                                <a href="/admin_home">di den trang admin</a><br>
+                                <a href="/admin_home">Quản lý trang</a><br>
                             @endif
                         @endisset
 
