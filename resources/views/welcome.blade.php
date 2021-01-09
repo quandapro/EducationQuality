@@ -32,7 +32,7 @@
                         <div class="card-body">
                             @isset($role)
                                 @if ( $role == 0 )
-                                    <a href="/admin_home">di den trang admin</a><br>
+                                    <a href="/admin_home">Admin</a><br>
                                 @endif
                             @endisset
                             
@@ -44,6 +44,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="welcome">Sự kiện</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
