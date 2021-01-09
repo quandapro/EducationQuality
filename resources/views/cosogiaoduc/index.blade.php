@@ -154,7 +154,7 @@
                     <th scope="col">Ngày kiểm định</th>
                     <th scope="col">Ngày hết hạn kiểm định</th>
                     <th scope="col">Thời hạn</th>
-                    <th scope="col" colspan=2>Tùy chọn</th>
+                    <th scope="col" colspan=3>Tùy chọn</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -166,6 +166,7 @@
                         <td>{{ $program->thoiHan }} năm</td>
                         <td><a href="/view_CSGD_show_programs/{{$program -> id_CSGD}}" id="create_course">sửa</a></td>
                         <td><a href="/view_CSGD_delete_programs/{{$program -> id_CSGD}}" id="create_course">xóa</a></td>
+                        <td><a href="/view_TC_CSGD_show_programs/{{$program -> id_CSGD}}" id="create_course">xem</a></td>
                     </tr>
                 @endforeach
 

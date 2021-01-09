@@ -48,6 +48,13 @@ Route::post('/view_TC_CTDT_store_programs', 'TieuChiCTDTController@store');
 Route::post('/view_TC_CTDT_update_programs/{id}', 'TieuChiCTDTController@update');
 Route::get('/view_TC_CTDT_delete_programs/{id}', 'TieuChiCTDTController@destroy');
 
+Route::get('/view_TC_CSGD_programs/{id}', 'TieuChiCSGDController@index');
+Route::get('/view_TC_CSGD_create_programs', 'TieuChiCSGDController@create');
+Route::get('/view_TC_CSGD_show_programs/{id}', 'TieuChiCSGDController@show');
+Route::post('/view_TC_CSGD_store_programs', 'TieuChiCSGDController@store');
+Route::post('/view_TC_CSGD_update_programs/{id}', 'TieuChiCSGDController@update');
+Route::get('/view_TC_CSGD_delete_programs/{id}', 'TieuChiCSGDController@destroy');
+
 //Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/logout','Auth\LoginController@logout');
 Route::post('/login','Auth\LoginController@login');
