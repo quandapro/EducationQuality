@@ -105,8 +105,11 @@
         <div class="row infomation-body-title">
             <h3 style="text-align:center">Sửa tiêu chí cơ sở giáo dục</h3>
         </div>
+        <h5 style="text-align:center"><i>(1: Đạt, 0: Chưa đạt)</i></h5>
         <div class="row left-info">
             <table border="2" align="center" class="table table-hover" style="width:700px;">
+                <form action = "/view_TC_CSGD_update_programs/{{$programs[0] -> id_CSGD}}" method = "post">
+                    @csrf
                 <thead>
 
                 <tr>
@@ -118,18 +121,17 @@
                 </thead>
 
 
-                <tbody>
-                @foreach ($programs as $program)
+                <tbody class="form-group">
                     <tr>
                         <td rowspan="3" ><i>Tiêu chuẩn 1</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 1.1</td>
-                        <td><input value={{ $program -> tieuChi1_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi1.1"  value={{ $programs[0] -> tieuChi1_1 }} class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 1.2</td>
-                        <td><input value={{ $program -> tieuChi1_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi1.2" value="{{ $programs[0] -> tieuChi1_2 }}"  class="form-control"></td>
                     </tr>
 
                     <tr>
@@ -137,194 +139,194 @@
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.1</td>
-                        <td><input value={{ $program -> tieuChi2_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.1" value="{{ $programs[0] -> tieuChi2_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.2</td>
-                        <td><input value={{ $program -> tieuChi2_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.2" value="{{ $programs[0]-> tieuChi2_2 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.3</td>
-                        <td><input value={{ $program -> tieuChi2_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.3" value="{{ $programs[0] -> tieuChi2_3 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.4</td>
-                        <td><input value={{ $program -> tieuChi2_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.4" value="{{ $programs[0] -> tieuChi2_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.5</td>
-                        <td><input value={{ $program -> tieuChi2_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.5" value="{{ $programs[0] -> tieuChi2_5 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.6</td>
-                        <td><input value={{ $program -> tieuChi2_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.6" value="{{ $programs[0] -> tieuChi2_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.7</td>
-                        <td><input value={{ $program -> tieuChi2_7 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi2.7" value="{{ $programs[0] -> tieuChi2_7 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td rowspan="7" ><i>Tiêu chuẩn 3</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.1</td>
-                        <td><input value={{ $program -> tieuChi3_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.1" value="{{ $programs[0]-> tieuChi3_1 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.2</td>
-                        <td><input value={{ $program -> tieuChi3_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.2" value="{{ $programs[0] -> tieuChi3_2 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.3</td>
-                        <td><input value={{ $program -> tieuChi3_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.3" value="{{ $programs[0] -> tieuChi3_3 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.4</td>
-                        <td><input value={{ $program -> tieuChi3_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.4" value="{{ $programs[0] -> tieuChi3_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.5</td>
-                        <td><input value={{ $program -> tieuChi3_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.5" value="{{ $programs[0] -> tieuChi3_5 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.6</td>
-                        <td><input value={{ $program -> tieuChi3_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi3.6" value="{{ $programs[0] -> tieuChi3_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td rowspan="8" ><i>Tiêu chuẩn 4</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.1</td>
-                        <td><input value={{ $program -> tieuChi4_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.1" value="{{ $programs[0] -> tieuChi4_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.2</td>
-                        <td><input value={{ $program -> tieuChi4_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.2" value="{{ $programs[0] -> tieuChi4_2 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.3</td>
-                        <td><input value={{ $program -> tieuChi4_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.3" value="{{ $programs[0] -> tieuChi4_3 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.4</td>
-                        <td><input value={{ $program -> tieuChi4_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.4" value="{{ $programs[0] -> tieuChi4_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.5</td>
-                        <td><input value={{ $program -> tieuChi4_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.5" value="{{ $programs[0] -> tieuChi4_5 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.6</td>
-                        <td><input value={{ $program -> tieuChi4_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.6" value="{{ $programs[0] -> tieuChi4_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.7</td>
-                        <td><input value={{ $program -> tieuChi4_7 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi4.7" value="{{ $programs[0] -> tieuChi4_7 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td rowspan="9" ><i>Tiêu chuẩn 5</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.1</td>
-                        <td><input value={{ $program -> tieuChi5_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.1" value="{{ $programs[0] -> tieuChi5_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.2</td>
-                        <td><input value={{ $program -> tieuChi5_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.2" value="{{ $programs[0]-> tieuChi5_2 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.3</td>
-                        <td><input value={{ $program -> tieuChi5_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.3" value="{{ $programs[0] -> tieuChi5_3 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.4</td>
-                        <td><input value={{ $program -> tieuChi5_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.4" value="{{ $programs[0] -> tieuChi5_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.5</td>
-                        <td><input value={{ $program -> tieuChi5_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.5" value="{{ $programs[0] -> tieuChi5_5 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.6</td>
-                        <td><input value={{ $program -> tieuChi5_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.6" value="{{ $programs[0] -> tieuChi5_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.7</td>
-                        <td><input value={{ $program -> tieuChi5_7 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.7" value="{{ $programs[0] -> tieuChi5_7 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.8</td>
-                        <td><input value={{ $program -> tieuChi5_8 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi5.8" value="{{ $programs[0] -> tieuChi5_8 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td rowspan="10" ><i>Tiêu chuẩn 6</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.1</td>
-                        <td><input value={{ $program -> tieuChi6_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.1" value="{{ $programs[0] -> tieuChi6_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.2</td>
-                        <td><input value={{ $program -> tieuChi6_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.2" value="{{ $programs[0] -> tieuChi6_2 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.3</td>
-                        <td><input value={{ $program -> tieuChi6_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.3" value="{{ $programs[0] -> tieuChi6_3 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.4</td>
-                        <td><input value={{ $program -> tieuChi6_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.4" value="{{ $programs[0] -> tieuChi6_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.5</td>
-                        <td><input value={{ $program -> tieuChi6_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.5" value="{{ $programs[0] -> tieuChi6_5 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.6</td>
-                        <td><input value={{ $program -> tieuChi6_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.6" value="{{ $programs[0] -> tieuChi6_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.7</td>
-                        <td><input value={{ $program -> tieuChi6_7 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.7" value="{{ $programs[0] -> tieuChi6_7 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.8</td>
-                        <td><input value={{ $program -> tieuChi6_8 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.8" value="{{ $programs[0] -> tieuChi6_8 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.9</td>
-                        <td><input value={{ $program -> tieuChi6_9 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi6.9" value="{{ $programs[0] -> tieuChi6_9 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td rowspan="8" ><i>Tiêu chuẩn 7</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.1</td>
-                        <td><input value={{ $program -> tieuChi7_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.1" value="{{ $programs[0] -> tieuChi7_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.2</td>
-                        <td><input value={{ $program -> tieuChi7_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.2" value="{{ $programs[0] -> tieuChi7_2 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.3</td>
-                        <td><input value={{ $program -> tieuChi7_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.3" value="{{ $programs[0] -> tieuChi7_3 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.4</td>
-                        <td><input value={{ $program -> tieuChi7_4 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.4" value="{{ $programs[0] -> tieuChi7_4 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.5</td>
-                        <td><input value={{ $program -> tieuChi7_5 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.5" value="{{ $programs[0] -> tieuChi7_5 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.6</td>
-                        <td><input value={{ $program -> tieuChi7_6 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.6" value="{{ $programs[0] -> tieuChi7_6 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.7</td>
-                        <td><input value={{ $program -> tieuChi7_7 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi7.7" value="{{ $programs[0] -> tieuChi7_7 }}"  class="form-control"></td>
                     </tr>
 
                     <tr>
@@ -332,16 +334,16 @@
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.1</td>
-                        <td><input value={{ $program -> tieuChi8_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi8.1" value="{{ $programs[0] -> tieuChi8_1 }}"  class="form-control"></td>
 
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.2</td>
-                        <td><input value={{ $program -> tieuChi8_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi8.2" value="{{ $programs[0] -> tieuChi8_2 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.3</td>
-                        <td><input value={{ $program -> tieuChi8_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi8.3" value="{{ $programs[0] -> tieuChi8_3 }}"  class="form-control"></td>
                     </tr>
 
                     <tr>
@@ -349,55 +351,63 @@
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.1</td>
-                        <td><input value={{ $program -> tieuChi9_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.1" value="{{ $programs[0] -> tieuChi9_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.2</td>
-                        <td><input value={{ $program -> tieuChi9_2 }} type="text" class="form-control"></td>                    </tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.2" value="{{ $programs[0]-> tieuChi9_2 }}" class="form-control"></td>
+                    </tr>
                     <tr>
                         <td>Tiêu chí 9.3</td>
-                        <td><input value={{ $program -> tieuChi9_3 }} type="text" class="form-control"></td>                    </tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.3" value="{{ $programs[0] -> tieuChi9_3 }}"  class="form-control"></td>
+                    </tr>
                     <tr>
                         <td>Tiêu chí 9.4</td>
-                        <td><input value={{ $program -> tieuChi9_4 }} type="text" class="form-control"></td>                    </tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.4" value="{{ $programs[0] -> tieuChi9_4 }}"  class="form-control"></td>
+                    </tr>
                     <tr>
                         <td>Tiêu chí 9.5</td>
-                        <td><input value={{ $program -> tieuChi9_5 }} type="text" class="form-control"></td>                    </tr>
-                    <tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.5" value="{{ $programs[0] -> tieuChi9_5 }}"  class="form-control"></td>
+                    </tr>
+
                     <tr>
                         <td>Tiêu chí 9.6</td>
-                        <td><input value={{ $program -> tieuChi9_6 }} type="text" class="form-control"></td>                    </tr>
-                    <tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.6" value="{{ $programs[0] -> tieuChi9_6 }}"  class="form-control"></td>
+                    </tr>
+
                     <tr>
                         <td>Tiêu chí 9.7</td>
-                        <td><input value={{ $program -> tieuChi9_7 }} type="text" class="form-control"></td>                    </tr>
-                    <tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.7" value="{{ $programs[0] -> tieuChi9_7 }}" class="form-control"></td>
+                    </tr>
+
                     <tr>
                         <td>Tiêu chí 9.8</td>
-                        <td><input value={{ $program -> tieuChi9_8 }} type="text" class="form-control"></td>                    </tr>
-                    <tr><tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.8" value="{{ $programs[0] -> tieuChi9_8 }}"  class="form-control"></td>
+                    </tr>
+                    <tr>
                         <td>Tiêu chí 9.9</td>
-                        <td><input value={{ $program -> tieuChi9_9 }} type="text" class="form-control"></td>                    </tr>
+                        <td><input type="number" min="0" max="1" name="tieuChi9.9" value="{{ $programs[0]-> tieuChi9_9 }}" class="form-control"></td>
+                    </tr>
                     <tr>
                         <td rowspan="4" ><i>Tiêu chuẩn 10</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.1</td>
-                        <td><input value={{ $program -> tieuChi10_1 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi10.1" value="{{ $programs[0] -> tieuChi10_1 }}"  class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.2</td>
-                        <td><input value={{ $program -> tieuChi10_2 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi10.2" value="{{ $programs[0] -> tieuChi10_2 }}" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.3</td>
-                        <td><input value={{ $program -> tieuChi10_3 }} type="text" class="form-control"></td>
+                        <td><input type="number" min="0" max="1" name="tieuChi10.3" value="{{ $programs[0] -> tieuChi10_3 }}"  class="form-control"></td>
                     </tr>
 
 
-                @endforeach
-                </tbody>
 
+                </tbody>
+                </form>
             </table>
 
         </div>
