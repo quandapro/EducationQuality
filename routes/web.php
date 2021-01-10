@@ -62,3 +62,11 @@ Route::post('/login','Auth\LoginController@login');
 Route::get('/admin_home', function () {
     return view('admin_home');
 });
+
+
+Route::get('/nguoikiemdinh-records','NgKiemDinhController@index');
+Route::get('/destroy-inspection/{id}','NgKiemDinhController@destroy');
+Route::get('/update-inspection/{id}','NgKiemDinhController@show');
+Route::post('/update-inspection/{id}','NgKiemDinhController@update');
+Route::get('/nguoikiemdinh-create','NgKiemDinhController@create');
+Route::post('/nguoikiemdinh-store','NgKiemDinhController@store');

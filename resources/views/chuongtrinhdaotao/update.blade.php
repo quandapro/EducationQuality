@@ -8,7 +8,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-10">
             <div class="col-md-3 col-sm-12 logo-home" id="logo-home">
-                <a href="welcome"><img class="img-responsive" style="width:200px; height: 65px;" src="images/logo.jpg" alt="Chania"></a>
+                <a href="welcome"><img class="img-responsive" style="width:200px; height: 65px;" src="/images/logo.jpg" alt="Chania"></a>
             </div>
             <div class="col-md-9 col-sm-12 menu-home">
                 <nav class="navbar navbar-expand-lg">
@@ -52,10 +52,7 @@
                                 <a class="nav-link disabled" href="#">Liên hệ</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0" action="page_quaility_item.html">
-                            <input class="form-control mr-sm-2" type="search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
-                        </form>
+
                     </div>
                 </nav>
             </div>
@@ -73,28 +70,28 @@
             <div class="col-md-12">
                 <div class="list-partner">
                     <a href="#">
-                        <img src="images/partner1.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner1.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner4.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner4.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/logo1.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/logo1.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner2.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner2.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner6.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner6.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner3.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner3.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner5.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner5.jpg" class="img-thumbnail" alt="">
                     </a>
                     <a href="#">
-                        <img src="images/partner7.jpg" class="img-thumbnail" alt="">
+                        <img src="/images/partner7.jpg" class="img-thumbnail" alt="">
                     </a>
                 </div>
             </div>

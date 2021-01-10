@@ -29,7 +29,14 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
+                        <div class="card-body">
+                            @isset($role)
+                                @if ( $role == 0 )
+                                    <a href="/admin_home">Admin</a><br>
+                                @endif
+                            @endisset
 
+                        </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
@@ -38,6 +45,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="welcome">Sự kiện</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Kết quả KDCLGD
@@ -45,7 +55,6 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a href="/view_CSGD_programs" class="dropdown-item" href="#">Kiểm định cơ sở giáo dục</a>
                                         <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
-
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -58,7 +67,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-2 header-login-signup">
-                <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="page_login.html">Đăng xuất</a></button>
+                <button type="button" class="btn btn-primary btn-login" id="btn-login"><a href="/logout">Đăng xuất</a></button>
             </div>
         </div>
     </div>
@@ -141,36 +150,37 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3>Chương trình đào tạo</h3>
+                <h3 style="color: #2a73cc;">Danh sách người kiểm định</h3>
             </div>
             <div class="row left-info">
                 <table border="2" class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">Chương trình đào tạo</th>
-                            <th scope="col">Ngày kiểm định</th>
-                            <th scope="col">Ngày hết hạn kiểm định</th>
-                            <th scope="col">Thời hạn</th>
-							<th scope="col" colspan=3>Tùy chọn</th>
+                        <th scope="col">Mã số</th>
+                        <th scope="col">Họ tên</th>
+                        <th scope="col">Ngày sinh</th>
+                        <th scope="col">Quê quán</th>
+                        <th scope="col">Đơn vị kiểm định</th>
+                        <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($programs as $program)
-						<tr>
-							<td>{{ $program->ten_CTDT }}</td>
-							<td>{{ $program->ngay_kd }}</td>
-							<td>{{ $program->ngayHetHan_kd }}</td>
-							<td>{{ $program->thoiHan }} năm</td>
-							<td><a href="/view_CTDT_show_programs/{{$program -> id_CTDT}}" id="create_course">sửa</a></td>
-							<td><a href="/view_CTDT_delete_programs/{{$program -> id_CTDT}}" id="create_course">xóa</a></td>
-                            <td><a href="/view_TC_CTDT_show_programs/{{$program -> id_CTDT}}" id="create_course">xem</a></td>
-						</tr>
-						@endforeach
-
+                        @foreach ($inspections as $inspection)
+                        <tr>
+                            <td>{{ $inspection->id_nguoiKD }}</td>
+                            <td>{{ $inspection->full_name }}</td>
+                            <td>{{ $inspection->ngaySinh }}</td>
+                            <td>{{ $inspection->queQuan }}</td>
+                            <td>{{ $inspection->id_DVKD }}</td>
+                            <td id="setting">
+                                <a href="/update-inspection/{{ $inspection->id_nguoiKD }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
+                                <a href="/destroy-inspection/{{ $inspection->id_nguoiKD }}" class="btn btn-danger active" role="button" aria-pressed="true">Xóa</a>
+                            </td>
+                        </tr>
+                        @endforeach
                     </tbody>
-
                 </table>
-				<a href="/view_CTDT_create_programs" id="create_course">Thêm mới</a>
+                <a class="btn btn-success" href="/nguoikiemdinh-create" role="button">Thêm mới</a>
             </div>
         </div>
     </div>
@@ -182,7 +192,7 @@
                     <p>
                         Trang web được xây dựng với mục đích lưu trữ, truy xuất các thông tin liên quan đến kiếm định chất lượng giáo dục đối với các cơ sở giáo dục và chương trình đào tạo
                     </p>
-                    <span> @2020 HUS University. All rights reserved.</span>
+                    <span> @20120 HUS University. All rights reserved.</span>
                 </div>
             </div>
             <div class="col-md-6 footer-more">
