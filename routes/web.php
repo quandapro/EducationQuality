@@ -70,3 +70,10 @@ Route::get('/update-inspection/{id}','NgKiemDinhController@show');
 Route::post('/update-inspection/{id}','NgKiemDinhController@update');
 Route::get('/nguoikiemdinh-create','NgKiemDinhController@create');
 Route::post('/nguoikiemdinh-store','NgKiemDinhController@store');
+
+Route::get('/donvikiemdinh-records','DonviKiemDinhController@index');
+Route::get('/donvikiemdinh-create','DonviKiemDinhController@create');
+Route::post('/donvikiemdinh-store','DonViKiemDinhController@store');
+Route::get('/update-donvikiemdinh/{id}','DonViKiemDinhController@show');
+Route::post('/update-donvikiemdinh/{id}','DonViKiemDinhController@update');
+Route::get('/destroy-donvikiemdinh/{id}','DonViKiemDinhController@destroy');

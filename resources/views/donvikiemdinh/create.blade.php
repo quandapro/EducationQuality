@@ -2,22 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>Trang chủ</title>
+    <title>Kết quả KD CLGD</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <style>
+        form{
+            width:50%;
+            margin:auto;
+         }   
+    </style>
 </head>
 
 <body>
-    <div id="header" class="container-fluid">
+   <div id="header" class="container-fluid">
         <div class="row">
             <div class="col-sm-6 col-md-10">
                 <div class="col-md-3 col-sm-12 logo-home" id="logo-home">
@@ -35,7 +41,7 @@
                                     <a href="/admin_home">Admin</a><br>
                                 @endif
                             @endisset
-
+                            
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -75,55 +81,12 @@
         </div>
     </div>
     <div id="body" class="container">
-        <div class="row slide-body">
-            <div class="bd-example">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/variant1.jpg" class="img-thumbnail d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Kiểm định chất lượng giáo dục</h5>
-                                <p>website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/variant2.jpg" class="img-thumbnail d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Kiểm định chất lượng giáo dục</h5>
-                                <p>website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/variant3.jpg" class="img-thumbnail d-block " alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Kiểm định chất lượng giáo dục</h5>
-                                <p>Website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
         <div class="container partner-body">
             <div class="row">
                 <div class="col-md-12">
                     <div class="list-partner">
                         <a href="#">
-                            <img src='images/partner1.jpg' class="img-thumbnail" alt="">
+                            <img src="images/partner1.jpg" class="img-thumbnail" alt="">
                         </a>
                         <a href="#">
                             <img src="images/partner4.jpg" class="img-thumbnail" alt="">
@@ -153,41 +116,16 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3>Tin tức - Sự kiện</h3>
+                <h3 style="color: #2a73cc;">Đơn vị kiểm định</h3>
             </div>
-            <div class="row left-info">
-                <div class="col-md-5 col-sm-12">
-                    <ul>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="page_event">
-                                <span>Thông tư 39/2020/TT-BGDĐT Quy định tiêu chuẩn ĐGCL CTĐT từ xa trình độ đại học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục 02 chương trình đào tạo tại trường đại học công nghệ thành phố hồ chí minh</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Thông báo tổ chức khóa đào tạo kiểm định viên kiểm định chất lượng giáo dục ĐH & TCCN (Khóa 16)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục cho 07 chương trình đào tạo trường Đại học Công nghiệp thực phẩm</span>
-                            </a>
-                        </li>
-                    </ul>
+            <form action="/donvikiemdinh-store" method="POST">
+                @csrf
+                <div class="form-group">
+                    <label for="exampleInputUser">Tên đơn vị</label>
+                    <input name="tenDonVi" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Mã người dùng">
                 </div>
-                <div class="col-md-7 col-sm-12">
-                    <img src="images/howitworks_certificate_v2.jpg" class="img-thumbnail" alt="">
-                </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Thêm</button>
+            </form>
         </div>
     </div>
     <div id="footer" class="container-fluid footer">
@@ -221,4 +159,4 @@
     </div>
 </body>
 
-</html>
+</html> 

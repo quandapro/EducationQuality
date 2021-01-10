@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Trang chủ</title>
+    <title>Kết quả KD CLGD</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,7 +35,7 @@
                                     <a href="/admin_home">Admin</a><br>
                                 @endif
                             @endisset
-
+                            
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -44,6 +44,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="welcome">Sự kiện</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/donvikiemdinh-records">Đơn vị kiểm định</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
@@ -123,7 +126,7 @@
                 <div class="col-md-12">
                     <div class="list-partner">
                         <a href="#">
-                            <img src='images/partner1.jpg' class="img-thumbnail" alt="">
+                            <img src="images/partner1.jpg" class="img-thumbnail" alt="">
                         </a>
                         <a href="#">
                             <img src="images/partner4.jpg" class="img-thumbnail" alt="">
@@ -153,41 +156,16 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3>Tin tức - Sự kiện</h3>
+                <h3 style="color: #2a73cc;">Cập nhật đơn vị kiểm định</h3>
             </div>
-            <div class="row left-info">
-                <div class="col-md-5 col-sm-12">
-                    <ul>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="page_event">
-                                <span>Thông tư 39/2020/TT-BGDĐT Quy định tiêu chuẩn ĐGCL CTĐT từ xa trình độ đại học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục 02 chương trình đào tạo tại trường đại học công nghệ thành phố hồ chí minh</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Thông báo tổ chức khóa đào tạo kiểm định viên kiểm định chất lượng giáo dục ĐH & TCCN (Khóa 16)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục cho 07 chương trình đào tạo trường Đại học Công nghiệp thực phẩm</span>
-                            </a>
-                        </li>
-                    </ul>
+            <form action="/update-donvikiemdinh/{{$unit->id_DVKD}}" method="POST">
+                @csrf
+                <div class="form-group">
+                    <label for="exampleInputUser">Tên đơn vị</label>
+                    <input name="tenDonVi" value="{{ $unit->tenDonVi }}" type="text" class="form-control" id="exampleInputUser"  placeholder="Mã người dùng">
                 </div>
-                <div class="col-md-7 col-sm-12">
-                    <img src="images/howitworks_certificate_v2.jpg" class="img-thumbnail" alt="">
-                </div>
-            </div>
+                <button type="submit" class="btn btn-primary">Thêm</button>
+            </form>
         </div>
     </div>
     <div id="footer" class="container-fluid footer">
@@ -221,4 +199,4 @@
     </div>
 </body>
 
-</html>
+</html> 
