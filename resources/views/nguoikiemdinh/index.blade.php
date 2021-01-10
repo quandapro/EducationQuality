@@ -46,6 +46,9 @@
                                     <a class="nav-link" href="welcome">Sự kiện</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/donvikiemdinh-records">Đơn vị kiểm định</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
                                 </li>
                                 <li class="nav-item dropdown">

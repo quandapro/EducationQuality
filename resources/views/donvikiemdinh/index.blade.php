@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Trang chủ</title>
+    <title>Kết quả KD CLGD</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -64,6 +64,10 @@
                                     <a class="nav-link disabled" href="#">Liên hệ</a>
                                 </li>
                             </ul>
+                            <form class="form-inline my-2 my-lg-0" action="page_quaility_item">
+                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                            </form>
                         </div>
                     </nav>
                 </div>
@@ -122,7 +126,7 @@
                 <div class="col-md-12">
                     <div class="list-partner">
                         <a href="#">
-                            <img src='images/partner1.jpg' class="img-thumbnail" alt="">
+                            <img src="images/partner1.jpg" class="img-thumbnail" alt="">
                         </a>
                         <a href="#">
                             <img src="images/partner4.jpg" class="img-thumbnail" alt="">
@@ -152,40 +156,29 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3>Tin tức - Sự kiện</h3>
+                <h3 style="color: #2a73cc;">Danh sách đơn vị kiểm định</h3>
             </div>
             <div class="row left-info">
-                <div class="col-md-5 col-sm-12">
-                    <ul>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="page_event">
-                                <span>Thông tư 39/2020/TT-BGDĐT Quy định tiêu chuẩn ĐGCL CTĐT từ xa trình độ đại học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục 02 chương trình đào tạo tại trường đại học công nghệ thành phố hồ chí minh</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Thông báo tổ chức khóa đào tạo kiểm định viên kiểm định chất lượng giáo dục ĐH & TCCN (Khóa 16)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục cho 07 chương trình đào tạo trường Đại học Công nghiệp thực phẩm</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-7 col-sm-12">
-                    <img src="images/howitworks_certificate_v2.jpg" class="img-thumbnail" alt="">
-                </div>
+                <table border="2" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tên đơn vị</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($units as $unit)
+                        <tr>
+                            <td>{{ $unit->tenDonVi }}</td>
+                            <td id="setting">
+                                <a href="" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
+                                <a href="" class="btn btn-danger active" role="button" aria-pressed="true">Xóa</a>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <a class="btn btn-success" href="/nguoikiemdinh-create" role="button">Thêm mới</a>
             </div>
         </div>
     </div>
@@ -220,4 +213,4 @@
     </div>
 </body>
 
-</html>
+</html> 

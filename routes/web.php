@@ -63,3 +63,5 @@ Route::get('/update-inspection/{id}','NgKiemDinhController@show');
 Route::post('/update-inspection/{id}','NgKiemDinhController@update');
 Route::get('/nguoikiemdinh-create','NgKiemDinhController@create');
 Route::post('/nguoikiemdinh-store','NgKiemDinhController@store');
+
+Route::get('/donvikiemdinh-records','DonviKiemDinhController@index');
