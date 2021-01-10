@@ -118,22 +118,23 @@
             <div class="row infomation-body-title">
                 <h3 style="color: #2a73cc;">Thêm người kiểm định</h3>
             </div>
-            <form action="/" method="POST">
+            <form action="/nguoikiemdinh-store" method="POST">
+                @csrf
                 <div class="form-group">
                     <label for="exampleInputUser">Mã người dùng</label>
-                    <input name="idUser1" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Mã người dùng">
+                    <input name="id_user" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Mã người dùng">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputUser">Họ tên</label>
-                    <input name="fullName1" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Tên người dùng">
+                    <input name="full_name" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Tên người dùng">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputUser">Ngày sinh</label>
-                    <input name="birthday1" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Ngày sinh">
+                    <input name="ngaySinh" value="" type="text" class="form-control" id="exampleInputUser"  placeholder="Ngày sinh">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputUser">Quê quán</label>
-                    <input name="address1" value="" type="text" class="form-control" id="exampleInputUser" placeholder="Quê quán">
+                    <input name="queQuan" value="" type="text" class="form-control" id="exampleInputUser" placeholder="Quê quán">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputUser">Đơn vị kiểm định</label>

@@ -183,7 +183,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-success">Thêm mới</button>
+                <a class="btn btn-success" href="/nguoikiemdinh-create" role="button">Thêm mới</a>
             </div>
         </div>
     </div>

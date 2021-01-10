@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\NgKiemDinh;
 
 class NgKiemDinhController extends Controller
 {
@@ -25,7 +26,7 @@ class NgKiemDinhController extends Controller
      */
     public function create()
     {
-        //
+        return view('nguoikiemdinh.create');
     }
 
     /**
@@ -36,7 +37,22 @@ class NgKiemDinhController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->input();
+        try{
+            $ngkiemdinh = new NgKiemDinh;
+            $ngkiemdinh->id_user = $data['id_user'];
+            $ngkiemdinh->full_name = $data['full_name'];
+            $ngkiemdinh->ngaySinh = $data['ngaySinh'];
+            $ngkiemdinh->queQuan = $data['queQuan'];
+            $ngkiemdinh->id_DVKD = $data['id_DVKD'];
+            $ngkiemdinh->save();
+            $inspections = DB::select('select * from nguoikd');
+            return view('nguoikiemdinh.index',['inspections'=>$inspections])->with('status',"Thêm mới thành công");
+        }
+        catch(Exception $e){
+            $inspections = DB::select('select * from nguoikd');
+            return view('nguoikiemdinh.index',['inspections'=>$inspections])->with('status',"Thêm mới thất bại");;
+        }
     }
 
     /**

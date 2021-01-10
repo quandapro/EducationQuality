@@ -61,3 +61,5 @@ Route::get('/nguoikiemdinh-records','NgKiemDinhController@index');
 Route::get('/destroy-inspection/{id}','NgKiemDinhController@destroy');
 Route::get('/update-inspection/{id}','NgKiemDinhController@show');
 Route::post('/update-inspection/{id}','NgKiemDinhController@update');
+Route::get('/nguoikiemdinh-create','NgKiemDinhController@create');
+Route::post('/nguoikiemdinh-store','NgKiemDinhController@store');
