@@ -156,30 +156,16 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3 style="color: #2a73cc;">Danh sách đơn vị kiểm định</h3>
+                <h3 style="color: #2a73cc;">Cập nhật đơn vị kiểm định</h3>
             </div>
-            <div class="row left-info">
-                <table border="2" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Tên đơn vị</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($units as $unit)
-                        <tr>
-                            <td>{{ $unit->tenDonVi }}</td>
-                            <td id="setting">
-                                <a href="/update-donvikiemdinh/{{ $unit->id_DVKD }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
-                                <a href="/destroy-donvikiemdinh/{{ $unit->id_DVKD }}" class="btn btn-danger active" role="button" aria-pressed="true">Xóa</a>
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-                <a class="btn btn-success" href="/donvikiemdinh-create" role="button">Thêm mới</a>
-            </div>
+            <form action="/update-donvikiemdinh/{{$unit->id_DVKD}}" method="POST">
+                @csrf
+                <div class="form-group">
+                    <label for="exampleInputUser">Tên đơn vị</label>
+                    <input name="tenDonVi" value="{{ $unit->tenDonVi }}" type="text" class="form-control" id="exampleInputUser"  placeholder="Mã người dùng">
+                </div>
+                <button type="submit" class="btn btn-primary">Thêm</button>
+            </form>
         </div>
     </div>
     <div id="footer" class="container-fluid footer">

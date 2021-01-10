@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\DonViKiemDinh;
 
 class DonViKiemDinhController extends Controller
 {
@@ -25,7 +26,7 @@ class DonViKiemDinhController extends Controller
      */
     public function create()
     {
-        //
+        return view('donvikiemdinh.create');
     }
 
     /**
@@ -36,7 +37,18 @@ class DonViKiemDinhController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->input();
+        try{
+            $unit = new DonViKiemDinh;
+            $unit->tenDonVi = $data['tenDonVi'];
+            $unit->save();
+            $units = DB::select('select * from donvikiemdinh');
+            return view('donvikiemdinh.index',['units'=>$units])->with('status',"Thêm mới thành công");
+        }
+        catch(Exception $e){
+            $inspections = DB::select('select * from nguoikd');
+            return view('donvikiemdinh.index',['units'=>$units])->with('status',"Thêm mới thất bại");;
+        }
     }
 
     /**
@@ -47,7 +59,9 @@ class DonViKiemDinhController extends Controller
      */
     public function show($id)
     {
-        //
+        $unit = DB::table('donvikiemdinh')->where('id_DVKD', $id)->get();
+        //dd($inspection[0]);
+        return view('donvikiemdinh.update',['unit'=>$unit[0]]);
     }
 
     /**
@@ -70,7 +84,14 @@ class DonViKiemDinhController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $tenDonVi = $request->input('tenDonVi');
+        DB::table('donvikiemdinh')
+              ->where('id_DVKD', $id)
+              ->update(
+                  ['tenDonVi' => $tenDonVi]
+        );
+        $units = DB::select('select * from donvikiemdinh');
+        return view('donvikiemdinh.index',['units'=>$units])->with('status',"Thay đổi thành công");
     }
 
     /**
