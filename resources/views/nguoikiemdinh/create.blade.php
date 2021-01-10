@@ -18,7 +18,7 @@
         form{
             width:50%;
             margin:auto;
-         }   
+         }
     </style>
 </head>
 
@@ -41,7 +41,7 @@
                                     <a href="/admin_home">Admin</a><br>
                                 @endif
                             @endisset
-                            
+
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -67,10 +67,7 @@
                                     <a class="nav-link disabled" href="#">Liên hệ</a>
                                 </li>
                             </ul>
-                            <form class="form-inline my-2 my-lg-0" action="page_quaility_item">
-                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
-                            </form>
+
                         </div>
                     </nav>
                 </div>
@@ -175,4 +172,4 @@
     </div>
 </body>
 
-</html> 
+</html>
