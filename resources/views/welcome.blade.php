@@ -51,10 +51,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Quản lý người dùng</a>
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Kết quả KDCLGD
-                              </a>
+                                        Kết quả KDCLGD
+                                    </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a href="/view_CSGD_programs" class="dropdown-item" href="#">Kiểm định cơ sở giáo dục</a>
                                         <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
