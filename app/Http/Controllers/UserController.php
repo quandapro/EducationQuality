@@ -15,8 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
-        $programs = DB::select('select * from users');
+        $users = DB::table('users')->get();
+        return view('user.index', ['users'=>$users]);
     }
 
     /**
@@ -26,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create');
     }
 
     /**
@@ -37,7 +37,19 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->input();
+        try{
+            $user = new User;
+            $user->full_name = $data['full_name'];
+            $user->usename = $data['usename'];
+            $user->password = $data['password'];
+            $user->role = $data['role'];
+            $user->save();
+            return redirect('users-records')->with('status',"Thêm mới thành công");
+        }
+        catch(Exception $e){
+            return redirect('users-records')->with('status',"Thêm mới thất bại");
+        }
     }
 
     /**
@@ -47,13 +59,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(){
-        if(Auth::check()){
-            $id = Auth::id();
-            $user = User::find($id);
-            return die($user->other_email);
-        }else{
-            return view('login');
-        }
+
     }
 
     /**
@@ -85,8 +91,9 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)
     {
-        //
+        DB::table('users')->where('id_user', '=', $id)->delete();
+        return redirect('users-records')->with('status',"Xóa thành công");
     }
 }
