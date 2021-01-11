@@ -63,9 +63,7 @@
                                         <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">Liên hệ</a>
-                                </li>
+
                             </ul>
 
                         </div>
