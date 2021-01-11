@@ -75,3 +75,5 @@ Route::get('/users-records','UserController@index');
 Route::get('/user-create','UserController@create');
 Route::post('/user-store','UserController@store');
 Route::get('/destroy-user/{id}','UserController@destroy');
+Route::get('/update-user/{id}','UserController@show');
+Route::post('/update-user/{id}','UserController@update');
