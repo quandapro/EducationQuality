@@ -58,8 +58,11 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(){
-
+    public function show($id)
+    {
+        $user= DB::table('users')->where('id_user', $id)->get();
+        //dd($inspection[0]);
+        return view('user.update',['user'=>$user[0]]);
     }
 
     /**
@@ -80,9 +83,17 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, $id)
     {
-        //
+        $full_name = $request->input('full_name');
+        $role = $request->input('role');
+        DB::table('users')
+              ->where('id_user', $id)
+              ->update(
+                  ['full_name' => $full_name,
+                  'role' => $role]
+        );
+        return redirect('users-records')->with('status',"Thay đổi thành công");
     }
 
     /**
