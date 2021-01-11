@@ -70,3 +70,8 @@ Route::post('/donvikiemdinh-store','DonViKiemDinhController@store');
 Route::get('/update-donvikiemdinh/{id}','DonViKiemDinhController@show');
 Route::post('/update-donvikiemdinh/{id}','DonViKiemDinhController@update');
 Route::get('/destroy-donvikiemdinh/{id}','DonViKiemDinhController@destroy');
+
+Route::get('/users-records','UserController@index');
+Route::get('/user-create','UserController@create');
+Route::post('/user-store','UserController@store');
+Route::get('/destroy-user/{id}','UserController@destroy');
