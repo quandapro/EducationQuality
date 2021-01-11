@@ -48,9 +48,7 @@
 
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">Liên hệ</a>
-                                </li>
+
                             </ul>
 
                         </div>
