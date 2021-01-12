@@ -24,9 +24,6 @@
                 <a href="welcome"><img class="img-responsive" style="width:300px; height: 65px;" src="images/logo2.jpg" alt="Chania"></a>
             </div>
             <div class="col-md-4 col-sm-12 menu-home" style="float: right;">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="nav-link" href="welcome">Trang chủ <span class="sr-only">(current)</span></a>
-                </nav>
             </div>
         </div>
     </div>
@@ -38,8 +35,6 @@
                         {{ session('status') }}
                     </div>
                 @endif
-
-                {{ __('You are logged in!') }}
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -83,7 +78,7 @@
                         <span class="admin_home_title">Danh mục quản lý</span>
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="/accounts-records">
                                     <span>Quản lý tài khoản</span>
                                 </a>
                             </li>
