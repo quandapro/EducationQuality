@@ -127,38 +127,38 @@
                     </tr>
                     <tr>
                         <td>Tiêu chí 1.1</td>
-                        <td>{{ $program -> tieuChi1_1 }}</td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
+                        <td id="tc_1.1">{{ $program -> tieuChi1_1 }}</td>
+                        <td id="mtb_tc_1" rowspan="3"></td>
+                        <td id="stcd_tc_1" rowspan="3"></td>
+                        <td id="tlstcd_tc_1" rowspan="3"></td>
 
                     </tr>
                     <tr>
                         <td>Tiêu chí 1.2</td>
-                        <td>{{ $program -> tieuChi1_2 }}</td>
+                        <td id="tc_1.2">{{ $program -> tieuChi1_2 }}</td>
 
                     </tr>
                     <tr>
                         <td>Tiêu chí 1.3</td>
-                        <td>{{ $program -> tieuChi1_3 }}</td>
+                        <td id="tc_1.3">{{ $program -> tieuChi1_3 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="4"><i>Tiêu chuẩn 2</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.1</td>
-                        <td>{{ $program -> tieuChi2_1 }}</td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
+                        <td id="tc_2.1">{{ $program -> tieuChi2_1 }}</td>
+                        <td id="mtb_tc_2" rowspan="3"></td>
+                        <td id="stcd_tc_2" rowspan="3"></td>
+                        <td id="tlstcd_tc_2" rowspan="3"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.2</td>
-                        <td>{{ $program -> tieuChi2_2 }}</td>
+                        <td id="tc_2.2">{{ $program -> tieuChi2_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 2.3</td>
-                        <td>{{ $program -> tieuChi2_3 }}</td>
+                        <td id="tc_2.3">{{ $program -> tieuChi2_3 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="4"><i>Tiêu chuẩn 3</i></td>
@@ -166,238 +166,238 @@
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.1</td>
-                        <td>{{ $program -> tieuChi3_1 }}</td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
+                        <td id="tc_3.1">{{ $program -> tieuChi3_1 }}</td>
+                        <td id="mtb_tc_3" rowspan="3"></td>
+                        <td id="stcd_tc_3" rowspan="3"></td>
+                        <td id="tlstcd_tc_3" rowspan="3"></td>
 
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.2</td>
-                        <td>{{ $program -> tieuChi3_2 }}</td>
+                        <td id="tc_3.2">{{ $program -> tieuChi3_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 3.3</td>
-                        <td>{{ $program -> tieuChi3_3 }}</td>
+                        <td id="tc_3.3">{{ $program -> tieuChi3_3 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="4"><i>Tiêu chuẩn 4</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.1</td>
-                        <td>{{ $program -> tieuChi4_1 }}</td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
-                        <td rowspan="3"></td>
+                        <td id="tc_4.1">{{ $program -> tieuChi4_1 }}</td>
+                        <td id="mtb_tc_4" rowspan="3"></td>
+                        <td id="stcd_tc_4" rowspan="3"></td>
+                        <td id="tlstcd_tc_4" rowspan="3"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.2</td>
-                        <td>{{ $program -> tieuChi4_2 }}</td>
+                        <td id="tc_4.2">{{ $program -> tieuChi4_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 4.3</td>
-                        <td>{{ $program -> tieuChi4_3 }}</td>
+                        <td id="tc_4.3">{{ $program -> tieuChi4_3 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="6"><i>Tiêu chuẩn 5</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.1</td>
-                        <td>{{ $program -> tieuChi5_1 }}</td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
+                        <td id="tc_5.1">{{ $program -> tieuChi5_1 }}</td>
+                        <td id="mtb_tc_5" rowspan="6"></td>
+                        <td id="stcd_tc_5" rowspan="6"></td>
+                        <td id="tlstcd_tc_5" rowspan="6"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.2</td>
-                        <td>{{ $program -> tieuChi5_2 }}</td>
+                        <td id="tc_5.2">{{ $program -> tieuChi5_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.3</td>
-                        <td>{{ $program -> tieuChi5_3 }}</td>
+                        <td id="tc_5.3">{{ $program -> tieuChi5_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.4</td>
-                        <td>{{ $program -> tieuChi5_4 }}</td>
+                        <td id="tc_5.4">{{ $program -> tieuChi5_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 5.5</td>
-                        <td>{{ $program -> tieuChi5_5 }}</td>
+                        <td id="tc_5.5">{{ $program -> tieuChi5_5 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="8"><i>Tiêu chuẩn 6</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.1</td>
-                        <td>{{ $program -> tieuChi6_1 }}</td>
-                        <td rowspan="7"></td>
-                        <td rowspan="7"></td>
-                        <td rowspan="7"></td>
+                        <td id="tc_6.1">{{ $program -> tieuChi6_1 }}</td>
+                        <td id="mtb_tc_6" rowspan="8"></td>
+                        <td id="stcd_tc_6" rowspan="8"></td>
+                        <td id="tlstcd_tc_6" rowspan="8"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.2</td>
-                        <td>{{ $program -> tieuChi6_2 }}</td>
+                        <td id="tc_6.2">{{ $program -> tieuChi6_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.3</td>
-                        <td>{{ $program -> tieuChi6_3 }}</td>
+                        <td id="tc_6.3">{{ $program -> tieuChi6_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.4</td>
-                        <td>{{ $program -> tieuChi6_4 }}</td>
+                        <td id="tc_6.4">{{ $program -> tieuChi6_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.5</td>
-                        <td>{{ $program -> tieuChi6_5 }}</td>
+                        <td id="tc_6.5">{{ $program -> tieuChi6_5 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.6</td>
-                        <td>{{ $program -> tieuChi6_6 }}</td>
+                        <td id="tc_6.6">{{ $program -> tieuChi6_6 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 6.7</td>
-                        <td>{{ $program -> tieuChi6_7 }}</td>
+                        <td id="tc_6.7"> {{ $program -> tieuChi6_7 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="6"><i>Tiêu chuẩn 7</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.1</td>
-                        <td>{{ $program -> tieuChi7_1 }}</td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
+                        <td id="tc_7.1">{{ $program -> tieuChi7_1 }}</td>
+                        <td id="mtb_tc_7" rowspan="6"></td>
+                        <td id="stcd_tc_7" rowspan="6"></td>
+                        <td id="tlstcd_tc_7" rowspan="6"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.2</td>
-                        <td>{{ $program -> tieuChi7_2 }}</td>
+                        <td id="tc_7.2">{{ $program -> tieuChi7_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.3</td>
-                        <td>{{ $program -> tieuChi7_3 }}</td>
+                        <td id="tc_7.3">{{ $program -> tieuChi7_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.4</td>
-                        <td>{{ $program -> tieuChi7_4 }}</td>
+                        <td id="tc_7.4">{{ $program -> tieuChi7_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 7.5</td>
-                        <td>{{ $program -> tieuChi7_5 }}</td>
+                        <td id="tc_7.5">{{ $program -> tieuChi7_5 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="6"><i>Tiêu chuẩn 8</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.1</td>
-                        <td>{{ $program -> tieuChi8_1 }}</td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
+                        <td id="tc_8.1">{{ $program -> tieuChi8_1 }}</td>
+                        <td id="mtb_tc_8" rowspan="6"></td>
+                        <td id="stcd_tc_8" rowspan="6"></td>
+                        <td id="tlstcd_tc_8" rowspan="6"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.2</td>
-                        <td>{{ $program -> tieuChi8_2 }}</td>
+                        <td id="tc_8.2">{{ $program -> tieuChi8_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.3</td>
-                        <td>{{ $program -> tieuChi8_3 }}</td>
+                        <td id="tc_8.3">{{ $program -> tieuChi8_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.4</td>
-                        <td>{{ $program -> tieuChi8_4 }}</td>
+                        <td id="tc_8.4">{{ $program -> tieuChi8_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 8.5</td>
-                        <td>{{ $program -> tieuChi8_5 }}</td>
+                        <td id="tc_8.5">{{ $program -> tieuChi8_5 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="6"><i>Tiêu chuẩn 9</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.1</td>
-                        <td>{{ $program -> tieuChi9_1 }}</td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
+                        <td id="tc_9.1">{{ $program -> tieuChi9_1 }}</td>
+                        <td id="mtb_tc_9" rowspan="6"></td>
+                        <td id="stcd_tc_9" rowspan="6"></td>
+                        <td id="tlstcd_tc_9" rowspan="6"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.2</td>
-                        <td>{{ $program -> tieuChi9_2 }}</td>
+                        <td id="tc_9.2">{{ $program -> tieuChi9_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.3</td>
-                        <td>{{ $program -> tieuChi9_3 }}</td>
+                        <td id="tc_9.3">{{ $program -> tieuChi9_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.4</td>
-                        <td>{{ $program -> tieuChi9_4 }}</td>
+                        <td id="tc_9.4">{{ $program -> tieuChi9_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 9.5</td>
-                        <td>{{ $program -> tieuChi9_5 }}</td>
+                        <td id="tc_9.5">{{ $program -> tieuChi9_5 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="7"><i>Tiêu chuẩn 10</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.1</td>
-                        <td>{{ $program -> tieuChi10_1 }}</td>
-                        <td rowspan="6"></td>
-                        <td rowspan="6"></td>
-                        <td rowspan="6"></td>
+                        <td id="tc_10.1">{{ $program -> tieuChi10_1 }}</td>
+                        <td id="mtb_tc_10" rowspan="7"></td>
+                        <td id="stcd_tc_10" rowspan="7"></td>
+                        <td id="tlstcd_tc_10" rowspan="7"></td>
                     </tr>
                     <tr>
-                        <td>Tiêu chí 10.2</td>
-                        <td>{{ $program -> tieuChi10_2 }}</td>
+                        <td >Tiêu chí 10.2</td>
+                        <td id="tc_10.2">{{ $program -> tieuChi10_2 }}</td>
                     </tr>
                     <tr>
-                        <td>Tiêu chí 10.3</td>
-                        <td>{{ $program -> tieuChi10_3 }}</td>
+                        <td >Tiêu chí 10.3</td>
+                        <td id="tc_10.3">{{ $program -> tieuChi10_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.4</td>
-                        <td>{{ $program -> tieuChi10_4 }}</td>
+                        <td id="tc_10.4">{{ $program -> tieuChi10_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.5</td>
-                        <td>{{ $program -> tieuChi10_5 }}</td>
+                        <td id="tc_10.5">{{ $program -> tieuChi10_5 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 10.6</td>
-                        <td>{{ $program -> tieuChi10_6 }}</td>
+                        <td id="tc_10.6">{{ $program -> tieuChi10_6 }}</td>
                     </tr>
                     <tr>
                         <td rowspan="6"><i>Tiêu chuẩn 11</i></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 11.1</td>
-                        <td>{{ $program -> tieuChi11_1 }}</td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
-                        <td rowspan="5"></td>
+                        <td id="tc_11.1">{{ $program -> tieuChi11_1 }}</td>
+                        <td id="mtb_tc_11" rowspan="5"></td>
+                        <td id="stcd_tc_11" rowspan="5"></td>
+                        <td id="tlstcd_tc_11" rowspan="5"></td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 11.2</td>
-                        <td>{{ $program -> tieuChi11_2 }}</td>
+                        <td id="tc_11.2">{{ $program -> tieuChi11_2 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 11.3</td>
-                        <td>{{ $program -> tieuChi11_3 }}</td>
+                        <td id="tc_11.3">{{ $program -> tieuChi11_3 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 11.4</td>
-                        <td>{{ $program -> tieuChi11_4 }}</td>
+                        <td id="tc_11.4">{{ $program -> tieuChi11_4 }}</td>
                     </tr>
                     <tr>
                         <td>Tiêu chí 11.5</td>
-                        <td>{{ $program -> tieuChi11_5 }}</td>
+                        <td id="tc_11.5">{{ $program -> tieuChi11_5 }}</td>
                     </tr>
 
                     <tr>
                         <td colspan="3"><b>Đánh giá chung CTĐT</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="mtb"></td>
+                        <td id="stcd"></td>
+                        <td id="tlstcd"></td>
 
                     </tr>
                     @endforeach
@@ -437,6 +437,47 @@
         </div>
     </div>
 </div>
+<script>
+    var so_tieu_chi = 11
+    var tong_so_tieu_chi = 0
+    var stcd_global = 0
+    var tongdiem = 0
+    for (var i = 1; i <= so_tieu_chi; i++)
+    {
+        var mtb_element = document.getElementById("mtb_tc_" + i)
+        var stcd_element = document.getElementById("stcd_tc_" + i)
+        var tlstcd_element = document.getElementById("tlstcd_tc_" + i)
+        var tc = []
+        var mtb = 0, stcd = 0
+        for (var j = 1; j < 10; j++)
+        {
+            var tb_element = document.getElementById("tc_" + i + "." + j)
+            if (tb_element)
+            {
+                tc.push(parseInt(tb_element.innerText))
+                tong_so_tieu_chi += 1
+                tongdiem += parseInt(tb_element.innerText)
+                mtb += parseInt(tb_element.innerText)
+            }
+        }
+        mtb /= tc.length 
+        mtb = Math.round(mtb)
+        for (var j = 0; j < tc.length; j++)
+        {
+            if (tc[j] >= mtb)
+            {
+                stcd += 1
+                stcd_global += 1
+            }
+        }
+        mtb_element.innerText = mtb 
+        stcd_element.innerText = stcd 
+        tlstcd_element.innerText = Math.round(stcd / tc.length * 100) 
+    }
+    document.getElementById("mtb").innerText = Math.round(tongdiem / tong_so_tieu_chi)
+    document.getElementById("stcd").innerText = stcd_global
+    document.getElementById("tlstcd").innerText = Math.round(stcd_global / tong_so_tieu_chi * 100)
+</script>
 </body>
 
 </html>
