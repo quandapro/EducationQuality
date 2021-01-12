@@ -178,7 +178,6 @@
                             @endif
                             <td id="setting">
                                 <a href="/update-user/{{ $user->id_user }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
-                                <a href="/destroy-user/{{ $user->id_user }}" class="btn btn-danger active" role="button" aria-pressed="true">Xóa</a>
                             </td>
                         </tr>
                         @endforeach

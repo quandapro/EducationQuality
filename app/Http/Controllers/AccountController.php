@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Illuminate\Http\Request;
 use DB;
-
-class UserController extends Controller
+use App\User;
+class AccountController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         $users = DB::table('users')->get();
-        return view('user.index', ['users'=>$users]);
+        return view('account.index', ['users'=>$users]);
     }
 
     /**
@@ -26,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('user.create');
+        
     }
 
     /**
@@ -37,41 +36,28 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->input();
-        try{
-            $user = new User;
-            $user->full_name = $data['full_name'];
-            $user->usename = $data['usename'];
-            $user->password = $data['password'];
-            $user->role = $data['role'];
-            $user->save();
-            return redirect('users-records')->with('status',"Thêm mới thành công");
-        }
-        catch(Exception $e){
-            return redirect('users-records')->with('status',"Thêm mới thất bại");
-        }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\User  $user
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         $user= DB::table('users')->where('id_user', $id)->get();
         //dd($inspection[0]);
-        return view('user.update',['user'=>$user[0]]);
+        return view('account.update',['user'=>$user[0]]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\User  $user
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit($id)
     {
         //
     }
@@ -80,31 +66,33 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\User  $user
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
         $full_name = $request->input('full_name');
+        $usename = $request->input('usename');
+        $password = $request->input('password');
         $role = $request->input('role');
         DB::table('users')
               ->where('id_user', $id)
               ->update(
                   ['full_name' => $full_name,
+                  'usename' => $usename,
+                  'password' => $password,
                   'role' => $role]
         );
-        return redirect('users-records')->with('status',"Thay đổi thành công");
+        return redirect('accounts-records')->with('status',"Thay đổi thành công");
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\User  $user
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        DB::table('users')->where('id_user', '=', $id)->delete();
-        return redirect('users-records')->with('status',"Xóa thành công");
     }
 }

@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Trang chủ</title>
+    <title>Kết quả KD CLGD</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -32,12 +32,10 @@
                         <div class="card-body">
                             @isset($role)
                                 @if ( $role == 0 )
-                                    <a href="/admin_home">Sở hữu</a><br>
-                                @else
-                                    <a href="welcome">Quản trị</a><br>
+                                    <a href="/admin_home">Admin</a><br>
                                 @endif
                             @endisset
-
+                            
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -48,23 +46,28 @@
                                     <a class="nav-link" href="welcome">Sự kiện</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
+                                    <a class="nav-link" href="/donvikiemdinh-records">Đơn vị kiểm định</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/users-records">Quản lý người dùng</a>
+                                    <a class="nav-link" href="/nguoikiemdinh-records">Danh sách người kiểm định</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Kết quả KDCLGD
-                                    </a>
+                                Kết quả KDCLGD
+                              </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a href="/view_CSGD_programs" class="dropdown-item" href="#">Kiểm định cơ sở giáo dục</a>
                                         <a href="/view_CTDT_programs" class="dropdown-item" href="#">Kiểm định chương trình đào tạo </a>
                                     </div>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Liên hệ</a>
+                                </li>
                             </ul>
-
+                            <form class="form-inline my-2 my-lg-0" action="page_quaility_item">
+                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                            </form>
                         </div>
                     </nav>
                 </div>
@@ -123,7 +126,7 @@
                 <div class="col-md-12">
                     <div class="list-partner">
                         <a href="#">
-                            <img src='images/partner1.jpg' class="img-thumbnail" alt="">
+                            <img src="images/partner1.jpg" class="img-thumbnail" alt="">
                         </a>
                         <a href="#">
                             <img src="images/partner4.jpg" class="img-thumbnail" alt="">
@@ -153,40 +156,42 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3>Tin tức - Sự kiện</h3>
+                <h3 style="color: #2a73cc;">Danh sách tài khoản</h3>
             </div>
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
             <div class="row left-info">
-                <div class="col-md-5 col-sm-12">
-                    <ul>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="page_event">
-                                <span>Thông tư 39/2020/TT-BGDĐT Quy định tiêu chuẩn ĐGCL CTĐT từ xa trình độ đại học</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục 02 chương trình đào tạo tại trường đại học công nghệ thành phố hồ chí minh</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Thông báo tổ chức khóa đào tạo kiểm định viên kiểm định chất lượng giáo dục ĐH & TCCN (Khóa 16)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <!-- <h3>Coursework</h3> -->
-                            <a href="">
-                                <span>Trao chứng nhận kiểm định chất lượng giáo dục cho 07 chương trình đào tạo trường Đại học Công nghiệp thực phẩm</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-7 col-sm-12">
-                    <img src="images/howitworks_certificate_v2.jpg" class="img-thumbnail" alt="">
-                </div>
+                <table border="2" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Họ và tên</th>
+                            <th scope="col">Tên người dùng</th>
+                            <th scope="col">Mật khẩu</th>
+                            <th scope="col">Vai trò</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($users as $user)
+                        <tr>
+                            <td>{{ $user->full_name }}</td>
+                            <td>{{ $user->usename }}</td>
+                            <td>{{ $user->password }}</td>
+                            @if($user->role == 0)
+                                <td>Sở hữu</td>
+                            @else
+                                <td>Quản trị</td>
+                            @endif
+                            <td id="setting">
+                                <a href="/update-account/{{ $user->id_user }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -221,4 +226,4 @@
     </div>
 </body>
 
-</html>
+</html> 
