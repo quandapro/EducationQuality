@@ -74,9 +74,15 @@ Route::get('/destroy-donvikiemdinh/{id}','DonViKiemDinhController@destroy');
 Route::get('/users-records','UserController@index');
 Route::get('/user-create','UserController@create');
 Route::post('/user-store','UserController@store');
+
 Route::get('/update-user/{id}','UserController@show');
 Route::post('/update-user/{id}','UserController@update');
 
 Route::get('/accounts-records','AccountController@index');
 Route::get('/update-account/{id}','AccountController@show');
 Route::post('/update-account/{id}','AccountController@update');
+
+Route::get('/destroy-user/{id}','UserController@destroy');
+Route::get('/update-user/{id}','UserController@show');
+Route::post('/update-user/{id}','UserController@update');
+
