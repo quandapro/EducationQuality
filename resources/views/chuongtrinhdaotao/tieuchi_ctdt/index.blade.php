@@ -98,7 +98,7 @@
 
     <div class="container infomation-body">
         <div class="row infomation-body-title">
-            <h3>ten ctdt</h3>
+            <h3>Bảng đánh giá</h3>
         </div>
         <div class="row left-info">
             <table border="2" class="table table-hover">
@@ -460,7 +460,7 @@
                 mtb += parseInt(tb_element.innerText)
             }
         }
-        mtb /= tc.length 
+        mtb /= tc.length
         mtb = Math.round(mtb)
         for (var j = 0; j < tc.length; j++)
         {
@@ -470,9 +470,9 @@
                 stcd_global += 1
             }
         }
-        mtb_element.innerText = mtb 
-        stcd_element.innerText = stcd 
-        tlstcd_element.innerText = Math.round(stcd / tc.length * 100) 
+        mtb_element.innerText = mtb
+        stcd_element.innerText = stcd
+        tlstcd_element.innerText = Math.round(stcd / tc.length * 100)
     }
     document.getElementById("mtb").innerText = Math.round(tongdiem / tong_so_tieu_chi)
     document.getElementById("stcd").innerText = stcd_global

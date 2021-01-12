@@ -61,49 +61,6 @@
     </div>
 </div>
 <div id="body" class="container">
-    <div class="row slide-body">
-        <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/variant1.jpg" class="img-thumbnail d-block " alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Kiểm định chất lượng giáo dục</h5>
-                            <p>website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/variant2.jpg" class="img-thumbnail d-block " alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Kiểm định chất lượng giáo dục</h5>
-                            <p>website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/variant3.jpg" class="img-thumbnail d-block " alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Kiểm định chất lượng giáo dục</h5>
-                            <p>Website quản lý kết quả kiểm định chất lượng giáo dục</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="container partner-body">
         <div class="row">
             <div class="col-md-12">

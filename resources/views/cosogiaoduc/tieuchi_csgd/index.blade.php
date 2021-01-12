@@ -98,7 +98,7 @@
 
     <div class="container infomation-body">
         <div class="row infomation-body-title">
-            <h3>ten csgd</h3>
+            <h3>Bảng đánh giá</h3>
         </div>
         <h5 style="text-align:center"><i>(1: Đạt, 0: Chưa đạt)</i></h5>
         <div class="row left-info">
