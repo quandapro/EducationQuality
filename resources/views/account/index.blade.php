@@ -156,7 +156,7 @@
 
         <div class="container infomation-body">
             <div class="row infomation-body-title">
-                <h3 style="color: #2a73cc;">Quản lý người dùng</h3>
+                <h3 style="color: #2a73cc;">Danh sách tài khoản</h3>
             </div>
             @if (session('status'))
                 <div class="alert alert-success">
@@ -167,7 +167,9 @@
                 <table border="2" class="table table-hover">
                     <thead>
                         <tr>
+                            <th scope="col">Họ và tên</th>
                             <th scope="col">Tên người dùng</th>
+                            <th scope="col">Mật khẩu</th>
                             <th scope="col">Vai trò</th>
                             <th scope="col"></th>
                         </tr>
@@ -176,19 +178,20 @@
                         @foreach ($users as $user)
                         <tr>
                             <td>{{ $user->full_name }}</td>
+                            <td>{{ $user->usename }}</td>
+                            <td>{{ $user->password }}</td>
                             @if($user->role == 0)
                                 <td>Sở hữu</td>
                             @else
                                 <td>Quản trị</td>
                             @endif
                             <td id="setting">
-                                <a href="/update-user/{{ $user->id_user }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
+                                <a href="/update-account/{{ $user->id_user }}" class="btn btn-primary active" role="button" aria-pressed="true">Sửa</a>
                             </td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
-                <a class="btn btn-success" href="/user-create" role="button">Thêm mới</a>
             </div>
         </div>
     </div>
